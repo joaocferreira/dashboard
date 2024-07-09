@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Table from './table';
+import data from './data.json'
 
-function App() {
+const App = () => {
+  let { items } = data;
+  const queryParameters = new URLSearchParams(window.location.search)
+  const group_filter = queryParameters.get('group');
+  if (group_filter) {
+    items = items.filter(item => item['group'] === group_filter)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Table headers={data.headers} items={items}/>
     </div>
+
   );
 }
 

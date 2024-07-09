@@ -1,0 +1,47 @@
+{
+  "headers": ["team", "group", "points", "wins"],
+  "items": [{
+    "team": "Germany",
+    "group": "A",
+    "points": 7,
+    "wins": 2,
+    "url": "https://en.wikipedia.org/wiki/Germany_national_football_team"
+  }, {
+    "team": "Switzerland",
+    "group": "A",
+    "points": 5,
+    "wins": 1,
+    "url": "https://en.wikipedia.org/wiki/Switzerland_national_football_team"
+  }, {
+    "team": "Spain",
+    "group": "B",
+    "points": 9,
+    "wins": 3
+  }, {
+    "team": "Italy",
+    "group": "B",
+    "points": 4,
+    "wins": 1
+  }, {
+    "team": "Hungary",
+    "group": "A",
+    "points": 3,
+    "wins": 1,
+    "url": "https://en.wikipedia.org/wiki/Hungary_national_football_team"
+  }, {
+    "team": "Scotland",
+    "group": "A",
+    "points": 1,
+    "wins": 0
+  }, {
+    "team": "Croatia",
+    "group": "B",
+    "points": 2,
+    "wins": 0
+  }, {
+    "team": "Albania",
+    "group": "B",
+    "points": 1,
+    "wins": 0
+  }]
+}
